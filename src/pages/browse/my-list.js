@@ -1,9 +1,9 @@
 import Head from 'next/head';
-import NavBar from '../../../components/nav/navbar';
+import NavBar from '../../../components/nav/navbar.js';
 
-import SectionCards from '../../../components/card/section-cards';
-import { redirectUser } from '../../../utils/redirectUser';
-import { getMyList } from '../../../lib/videos';
+import SectionCards from '../../../components/card/section-cards.js';
+import { redirectUser } from '../../../utils/redirectUser.js';
+import { getMyList } from '../../../lib/videos.js';
 import styles from '../../styles/MyList.module.css';
 
 export async function getServerSideProps(context) {
