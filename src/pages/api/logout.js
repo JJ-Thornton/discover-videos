@@ -1,6 +1,6 @@
-import { magicAdmin } from '../../lib/magic.js';
-import { removeTokenCookie } from '../../lib/cookies.js';
-import { verifyToken } from '../../lib/utils.js';
+import { magicAdmin } from '../lib/magic.js';
+import { removeTokenCookie } from '../lib/cookies.js';
+import { verifyToken } from '../lib/utils.js';
 
 export default async function logout(req, res) {
   try {
