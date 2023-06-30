@@ -1,8 +1,8 @@
 import Head from 'next/head';
 import styles from '@/styles/Home.module.css';
 
-import Banner from '../../components/banner/banner';
-import NavBar from '../../components/nav/navbar';
+import Banner from '../../components/banner/banner.js';
+import NavBar from '../../components/nav/navbar.js';
 
 import SectionCards from '../../components/card/section-cards.js';
 
@@ -11,7 +11,7 @@ import {
   getPopularVideos,
   getWatchItAgainVideos,
 } from '../../lib/videos.js';
-import { redirectUser } from '../../utils/redirectUser';
+import { redirectUser } from '../../utils/redirectUser.js';
 
 export async function getServerSideProps(context) {
   const { userId, token } = await redirectUser(context);
