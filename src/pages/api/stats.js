@@ -2,8 +2,8 @@ import {
   findVideoIdByUser,
   updateStats,
   insertStats,
-} from '../../../lib/db/hasura';
-import { verifyToken } from '../../../lib/utils';
+} from '../../../lib/db/hasura.js';
+import { verifyToken } from '../../../lib/utils.js';
 
 export default async function stats(req, resp) {
   try {
